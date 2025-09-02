@@ -1326,8 +1326,8 @@ local function Unhide()
 	Debounce = true
 	Main.Position = UDim2.new(0, 80, 0, 200)  -- Moved further down and right
 	Main.Visible = true
-	TweenService:Create(Main, TweenInfo.new(0.2, Enum.EasingStyle.Linear), {Size = UDim2.new(0, 200, 0, 200)}):Play()
-	TweenService:Create(Main.Topbar, TweenInfo.new(0.2, Enum.EasingStyle.Linear), {Size = UDim2.new(0, 200, 0, 25)}):Play()
+	TweenService:Create(Main, TweenInfo.new(0.2, Enum.EasingStyle.Linear), {Size = UDim2.new(0, 400, 0, 400)}):Play()
+	TweenService:Create(Main.Topbar, TweenInfo.new(0.2, Enum.EasingStyle.Linear), {Size = UDim2.new(0, 400, 0, 50)}):Play()
 	TweenService:Create(Main.Shadow.Image, TweenInfo.new(0.7, Enum.EasingStyle.Exponential), {ImageTransparency = 0.6}):Play()
 	TweenService:Create(Main, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {BackgroundTransparency = 0}):Play()
 	TweenService:Create(Main.Topbar, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {BackgroundTransparency = 0}):Play()
@@ -1591,7 +1591,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 	local Passthrough = false
 	Topbar.Title.Text = Settings.Name
 
-	Main.Size = UDim2.new(0, 200, 0, 200)
+	Main.Size = UDim2.new(0, 400, 0, 400)
 	Main.Visible = true
 	Main.BackgroundTransparency = 1
 	Main.Position = UDim2.new(0, 80, 0, 200)  -- Moved further down and right
@@ -3482,14 +3482,14 @@ function RayfieldLibrary:CreateWindow(Settings)
 
 
 	task.wait(1.1)
-	TweenService:Create(Main, TweenInfo.new(0.1, Enum.EasingStyle.Linear), {Size = UDim2.new(0, 190, 0, 50)}):Play()
+	TweenService:Create(Main, TweenInfo.new(0.2, Enum.EasingStyle.Linear), {Size = UDim2.new(0, 380, 0, 100)}):Play()
 	task.wait(0.3)
-	TweenService:Create(LoadingFrame.Title, TweenInfo.new(0.05, Enum.EasingStyle.Linear), {TextTransparency = 1}):Play()
-	TweenService:Create(LoadingFrame.Subtitle, TweenInfo.new(0.05, Enum.EasingStyle.Linear), {TextTransparency = 1}):Play()
-	TweenService:Create(LoadingFrame.Version, TweenInfo.new(0.05, Enum.EasingStyle.Linear), {TextTransparency = 1}):Play()
+	TweenService:Create(LoadingFrame.Title, TweenInfo.new(0.1, Enum.EasingStyle.Linear), {TextTransparency = 1}):Play()
+	TweenService:Create(LoadingFrame.Subtitle, TweenInfo.new(0.1, Enum.EasingStyle.Linear), {TextTransparency = 1}):Play()
+	TweenService:Create(LoadingFrame.Version, TweenInfo.new(0.1, Enum.EasingStyle.Linear), {TextTransparency = 1}):Play()
 	task.wait(0.1)
-	TweenService:Create(Main, TweenInfo.new(0.1, Enum.EasingStyle.Linear), {Size = UDim2.new(0, 200, 0, 200)}):Play()
-	TweenService:Create(Main.Shadow.Image, TweenInfo.new(0.1, Enum.EasingStyle.Linear), {ImageTransparency = 0.6}):Play()
+	TweenService:Create(Main, TweenInfo.new(0.2, Enum.EasingStyle.Linear), {Size = UDim2.new(0, 400, 0, 400)}):Play()
+	TweenService:Create(Main.Shadow.Image, TweenInfo.new(0.2, Enum.EasingStyle.Linear), {ImageTransparency = 0.6}):Play()
 
 	Topbar.BackgroundTransparency = 1
 	Topbar.Divider.Size = UDim2.new(0, 0, 0, 1)
