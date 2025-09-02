@@ -711,7 +711,7 @@ elseif not useStudio then
 end
 
 
-local minSize = Vector2.new(1024, 768)
+local minSize = Vector2.new(800, 600)
 local useMobileSizing
 
 if Rayfield.AbsoluteSize.X < minSize.X and Rayfield.AbsoluteSize.Y < minSize.Y then
@@ -1117,7 +1117,7 @@ local function openSearch()
 	Main.Search.Input.TextTransparency = 1
 	Main.Search.Search.ImageTransparency = 1
 	Main.Search.UIStroke.Transparency = 1
-	Main.Search.Size = UDim2.new(1, 0, 0, 80)
+	Main.Search.Size = UDim2.new(1, 0, 0, 160)
 	Main.Search.Position = UDim2.new(0.5, 0, 0, 70)
 
 	Main.Search.Input.Interactable = true
@@ -1266,8 +1266,8 @@ local function Maximise()
 	TweenService:Create(Topbar.CornerRepair, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {BackgroundTransparency = 0}):Play()
 	TweenService:Create(Topbar.Divider, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {BackgroundTransparency = 0}):Play()
 	TweenService:Create(dragBarCosmetic, TweenInfo.new(0.25, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {BackgroundTransparency = 0.7}):Play()
-	TweenService:Create(Main, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {Size = useMobileSizing and UDim2.new(0, 500, 0, 275) or UDim2.new(0, 500, 0, 475)}):Play()
-	TweenService:Create(Topbar, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {Size = UDim2.new(0, 500, 0, 45)}):Play()
+	TweenService:Create(Main, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {Size = UDim2.new(0, 400, 0, 400)}):Play()
+	TweenService:Create(Topbar, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {Size = UDim2.new(0, 400, 0, 50)}):Play()
 	TabList.Visible = true
 	task.wait(0.2)
 
