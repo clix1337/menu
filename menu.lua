@@ -1324,7 +1324,7 @@ end
 
 local function Unhide()
 	Debounce = true
-	Main.Position = UDim2.new(0, 50, 0, 50)  -- Positioned 50 pixels from top-left
+	Main.Position = UDim2.new(0, 20, 0, 100)  -- Adjusted to match red square position
 	Main.Visible = true
 	TweenService:Create(Main, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {Size = useMobileSizing and UDim2.new(0, 500, 0, 275) or UDim2.new(0, 500, 0, 475)}):Play()
 	TweenService:Create(Main.Topbar, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {Size = UDim2.new(0, 500, 0, 45)}):Play()
@@ -1614,7 +1614,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 	Main.Size = UDim2.new(0, 420, 0, 100)
 	Main.Visible = true
 	Main.BackgroundTransparency = 1
-	Main.Position = UDim2.new(0, 50, 0, 50)  -- Positioned 50 pixels from top-left
+	Main.Position = UDim2.new(0, 20, 0, 100)  -- Adjusted to match red square position
 	if Main:FindFirstChild('Notice') then Main.Notice.Visible = false end
 	Main.Shadow.Image.ImageTransparency = 1
 
@@ -1712,7 +1712,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 
 	makeDraggable(Main, Topbar, false, {dragOffset, dragOffsetMobile})
 	if dragBar then 
-		dragBar.Position = useMobileSizing and UDim2.new(0, 50, 0, dragOffsetMobile) or UDim2.new(0, 50, 0, dragOffset) 
+		dragBar.Position = useMobileSizing and UDim2.new(0, 20, 0, dragOffsetMobile) or UDim2.new(0, 20, 0, dragOffset) 
 		makeDraggable(Main, dragInteract, true, {dragOffset, dragOffsetMobile}) 
 	end
 
@@ -3969,7 +3969,7 @@ if useStudio then
 
 	--local Label2 = Tab:CreateLabel("Warning", 4483362458, Color3.fromRGB(255, 159, 49),  true)
 
-	--local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph Example"})
+	--local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph Example"})
 end
 
 if CEnabled and Main:FindFirstChild('Notice') then
