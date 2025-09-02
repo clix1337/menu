@@ -1324,10 +1324,10 @@ end
 
 local function Unhide()
 	Debounce = true
-	Main.Position = UDim2.new(0, 40, 0, 150)  -- Shifted down and slightly right
+	Main.Position = UDim2.new(0, 80, 0, 200)  -- Moved further down and right
 	Main.Visible = true
-	TweenService:Create(Main, TweenInfo.new(0.2, Enum.EasingStyle.Linear), {Size = useMobileSizing and UDim2.new(0, 500, 0, 275) or UDim2.new(0, 500, 0, 475)}):Play()
-	TweenService:Create(Main.Topbar, TweenInfo.new(0.2, Enum.EasingStyle.Linear), {Size = UDim2.new(0, 500, 0, 45)}):Play()
+	TweenService:Create(Main, TweenInfo.new(0.2, Enum.EasingStyle.Linear), {Size = useMobileSizing and UDim2.new(0, 300, 0, 165) or UDim2.new(0, 300, 0, 285)}):Play()
+	TweenService:Create(Main.Topbar, TweenInfo.new(0.2, Enum.EasingStyle.Linear), {Size = UDim2.new(0, 300, 0, 27)}):Play()
 	TweenService:Create(Main.Shadow.Image, TweenInfo.new(0.7, Enum.EasingStyle.Exponential), {ImageTransparency = 0.6}):Play()
 	TweenService:Create(Main, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {BackgroundTransparency = 0}):Play()
 	TweenService:Create(Main.Topbar, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {BackgroundTransparency = 0}):Play()
@@ -1611,10 +1611,10 @@ function RayfieldLibrary:CreateWindow(Settings)
 	local Passthrough = false
 	Topbar.Title.Text = Settings.Name
 
-	Main.Size = UDim2.new(0, 420, 0, 100)
+	Main.Size = UDim2.new(0, 300, 0, 60)
 	Main.Visible = true
 	Main.BackgroundTransparency = 1
-	Main.Position = UDim2.new(0, 40, 0, 150)  -- Shifted down and slightly right
+	Main.Position = UDim2.new(0, 80, 0, 200)  -- Moved further down and right
 	if Main:FindFirstChild('Notice') then Main.Notice.Visible = false end
 	Main.Shadow.Image.ImageTransparency = 1
 
@@ -1712,7 +1712,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 
 	makeDraggable(Main, Topbar, false, {dragOffset, dragOffsetMobile})
 	if dragBar then 
-		dragBar.Position = useMobileSizing and UDim2.new(0, 40, 0, dragOffsetMobile) or UDim2.new(0, 40, 0, dragOffset) 
+		dragBar.Position = useMobileSizing and UDim2.new(0, 80, 0, dragOffsetMobile) or UDim2.new(0, 80, 0, dragOffset) 
 		makeDraggable(Main, dragInteract, true, {dragOffset, dragOffsetMobile}) 
 	end
 
@@ -3969,7 +3969,7 @@ if useStudio then
 
 	--local Label2 = Tab:CreateLabel("Warning", 4483362458, Color3.fromRGB(255, 159, 49),  true)
 
-	--local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph Example"})
+	--local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph ExampleParagraph Example"})
 end
 
 if CEnabled and Main:FindFirstChild('Notice') then
